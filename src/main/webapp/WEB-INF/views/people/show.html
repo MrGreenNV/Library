@@ -7,8 +7,14 @@
 <body>
 
 <p th:text="${person.getFullName() + ', ' + person.getYearOfBirthday()}">VALUE</p>
-<!--  <p th:if-->
-<!--<div th:if="${Boolean.TRUE}" th:each="book : "-->
+
+<p th:if="${#lists.isEmpty(books)}">Абонент пока не взял ни одной книги</p>
+
+<hr th:if="${not #lists.isEmpty(books)}"/>
+
+<div th:if="${not #lists.isEmpty(books)}" th:each="book : ${books}">
+    <a th:text="${book.getTitle() + ', ' + book.getAuthor() + ', ' + book.getYearOfRealize()}"></a>
+</div>
 
 <hr/>
 

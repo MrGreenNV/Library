@@ -9,13 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="652923cf-0daa-4e08-8b5d-268bc865b14f" name="Changes" comment="Added PeopleController.java, PersonDAO.java, PersonValidator.java, index.html, show.html, new.html, edit.html">
+    <list default="true" id="652923cf-0daa-4e08-8b5d-268bc865b14f" name="Changes" comment="Changed edit.html, new.html - adds control errors&#10;Changed PeopleController.java, PersonDAO.java - adds CRUD methods">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/controller/BooksController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/dao/BookDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/util/BookValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/controller/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/controller/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/util/PersonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/averkiev/library/util/PersonValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -194,7 +202,10 @@
       <workItem from="1681274687144" duration="999000" />
       <workItem from="1681275761498" duration="165000" />
       <workItem from="1681275936696" duration="13183000" />
-      <workItem from="1681299578869" duration="5145000" />
+      <workItem from="1681299578869" duration="5495000" />
+      <workItem from="1681332283197" duration="1795000" />
+      <workItem from="1681359355643" duration="14270000" />
+      <workItem from="1681375226284" duration="5747000" />
     </task>
     <task id="LOCAL-00001" summary="Configured the project&#10;Adds SpringConfig.java, MySpringMvcAbstractServletInitializer.java">
       <created>1681245388686</created>
@@ -224,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681291894191</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed edit.html, new.html - adds control errors&#10;Changed PeopleController.java, PersonDAO.java - adds CRUD methods">
+      <created>1681305505280</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681305505280</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +253,8 @@
     <MESSAGE value="Adds entities Person.java and Book.java" />
     <MESSAGE value="Added support Russian language&#10;Changed MySpringMvcAbstractServletInitializer.java and SpringConfig.java" />
     <MESSAGE value="Added PeopleController.java, PersonDAO.java, PersonValidator.java, index.html, show.html, new.html, edit.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PeopleController.java, PersonDAO.java, PersonValidator.java, index.html, show.html, new.html, edit.html" />
+    <MESSAGE value="Changed edit.html, new.html - adds control errors&#10;Changed PeopleController.java, PersonDAO.java - adds CRUD methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed edit.html, new.html - adds control errors&#10;Changed PeopleController.java, PersonDAO.java - adds CRUD methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

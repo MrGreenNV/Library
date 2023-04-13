@@ -58,4 +58,5 @@ public class Book {
     public void setYearOfRealize(int yearOfRealize) {
         this.yearOfRealize = yearOfRealize;
     }
+
 }

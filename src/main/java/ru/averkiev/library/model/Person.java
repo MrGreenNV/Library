@@ -2,6 +2,8 @@ package ru.averkiev.library.model;
 
 import jakarta.validation.constraints.*;
 
+import java.util.List;
+
 public class Person {
     private int id;
 
@@ -13,6 +15,8 @@ public class Person {
     @Min(value = 1900, message = "Year should be between 1900 and 2017 character")
     @Max(value = 2017, message = "Year should be between 1900 and 2017 character")
     private int yearOfBirthday;
+
+    private List<Book> listBooks = null;
 
     public Person(int id, String fullName, int date) {
         this.id = id;
@@ -45,5 +49,13 @@ public class Person {
 
     public void setYearOfBirthday(int yearOfBirthday) {
         this.yearOfBirthday = yearOfBirthday;
+    }
+
+    public List<Book> getListBooks() {
+        return listBooks;
+    }
+
+    public void setListBooks(List<Book> listBooks) {
+        this.listBooks = listBooks;
     }
 }
