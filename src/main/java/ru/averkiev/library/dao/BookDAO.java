@@ -48,4 +48,12 @@ public class BookDAO {
     public List<Person> getPeople() {
         return jdbcTemplate.query("SELECT * FROM Person", new BeanPropertyRowMapper<>(Person.class));
     }
+
+    public void addBook(int personId, int bookId) {
+        jdbcTemplate.update("UPDATE Book SET person_id=? WHERE id=?", personId, bookId);
+    }
+
+    public void rmBook(int id) {
+        jdbcTemplate.update("UPDATE Book SET person_id=null WHERE id=?", id);
+    }
 }

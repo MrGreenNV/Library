@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Страница изменения книги</title>
 </head>
 <body>
+
+<form th:method="PATCH" th:action="@{/books/{id}(id=${book.getId()})}" th:object="${book}">
+
+    <label for="title">Введите название книги</label>
+    <input text="text" th:field="*{title}" id="title">
+    <div style="color: red" th:if="${#fields.hasErrors()}" th:errors="*{title}"></div>
+    <br/>
+
+    <label for="author">Введите автора</label>
+    <input text="text" th:field="*{author}" id="author">
+    <div style="color: red" th:if="${#fields.hasErrors()}" th:errors="*{author}"></div>
+    <br/>
+
+    <label for="yearOfRealize">Введите год</label>
+    <input text="text" th:field="*{yearOfRealize}" id="yearOfRealize">
+    <div style="color: red" th:if="${#fields.hasErrors()}" th:errors="*{yearOfRealize}"></div>
+    <br/>
+
+    <input title="submit" value="Редактировать!">
+
+</form>
 
 </body>
 </html>

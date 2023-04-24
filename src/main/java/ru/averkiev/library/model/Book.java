@@ -1,8 +1,6 @@
 package ru.averkiev.library.model;
 
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 
 public class Book {
     private int id;
@@ -13,8 +11,8 @@ public class Book {
     @NotEmpty(message = "Author not should be empty!")
     private String author;
 
-    @Size(min = 1700, max = 2023, message = "Year should be between 1700 and 2023 character")
-    @Pattern(regexp = "\\d{4}", message = "Year should be valid - YYYY")
+    @Min(value = 1700, message = "Year should be between 1700 and 2023 character")
+    @Max(value = 2023, message = "Year should be between 1700 and 2023 character")
     private int yearOfRealize;
 
     public Book(int id, String title, String author, int yearOfRealize) {
